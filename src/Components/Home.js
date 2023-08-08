@@ -14,7 +14,7 @@ function Home() {
         }, (error) => {
             console.log(error.text);
         });
-        e.targer.reset()
+        // e.targer.reset()
 
     };
   return (
