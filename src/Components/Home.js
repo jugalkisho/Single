@@ -11,10 +11,11 @@ function Home() {
             console.log(result.text);
             console.log("Massage send");
             alert("Send mail")
-            e.targer.reset()
         }, (error) => {
             console.log(error.text);
         });
+        e.targer.reset()
+
     };
   return (
     <div className="container">
