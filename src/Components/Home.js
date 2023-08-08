@@ -10,6 +10,7 @@ function Home() {
         .then((result) => {
             console.log(result.text);
             console.log("Massage send");
+            alert("Send mail")
         }, (error) => {
             console.log(error.text);
         });
