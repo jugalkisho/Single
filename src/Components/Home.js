@@ -24,9 +24,9 @@ function Home() {
             <center>Mail Form</center>
             <form ref={form} onSubmit={sendEmail}>
       <label>Name</label>
-      <input type="text" className='form-control' name="user_name" />
+      <input type="text" className='form-control' name="user_name" required/>
       <label>Email</label>
-      <input type="email" className='form-control' name="user_email" />
+      <input type="email" className='form-control' name="user_email" required/>
       <label>Message</label>
       <textarea className='form-control' name="message" />
       <input type="submit" className='form-control' value="Send" />
