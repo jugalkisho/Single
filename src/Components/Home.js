@@ -6,7 +6,8 @@ function Home() {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_nlm1x3f', 'template_hi3xzic', form.current, 'tqHSqObCYK-dmzwWU')
+      emailjs.sendForm('service_nlm1x3f', 'template_hi3xzic', form.current, 'tqHSqObCYK-dmzwWU');
+      emailjs.sendForm('service_nlm1x3f','template_qyt1m67', form.current, 'tqHSqObCYK-dmzwWU')
         .then((result) => {
             console.log(result.text);
             console.log("Massage send");
@@ -14,7 +15,7 @@ function Home() {
         }, (error) => {
             console.log(error.text);
         });
-        // e.targer.reset()
+        
 
     };
   return (
